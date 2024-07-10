@@ -1,0 +1,44 @@
+.cardformularioregistro{
+    padding: 1%;
+    width: auto;
+    height: 450px;
+    margin-left: 17px;
+   }
+   mat-card{
+    display: block;
+  }
+  mat-form-field {
+    display: block;
+  }
+
+  .mat-form-field {
+    height: 40px !important;
+    padding: 13px;
+    font-size: 12px;
+ }
+
+
+
+/*boton formulario */
+.lt-register-btn {
+    background: #2196f3;
+    color: #fff;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 12px 50px 12px 50px;
+    line-height: normal;
+    font-size: 13px;
+    position: relative;
+    margin-top: 25px;
+  }
+  
+  .lt-register-btn:hover,
+  .lt-register-btn:focus {
+    color: #fff;
+    background: #11cc4a;
+  }
+  
+  .lt-register-btn i {
+    position: absolute;
+    right: 15px;
+  }

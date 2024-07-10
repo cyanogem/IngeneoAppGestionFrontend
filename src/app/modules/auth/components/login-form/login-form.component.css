@@ -1,0 +1,149 @@
+
+mat-card{
+  display: block;
+}
+mat-form-field {
+  display: block;
+}
+
+.login-header{
+  font-size: 2.5rem;
+  color: #8c1066;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  animation: fadelin 1.75s ease-in-out;
+}
+
+.login-button{
+  font-weight: 100;
+  width: 190px;
+  font-size: 1.1rem;
+}
+
+.cardlogin{
+  background-color: whitesmoke;
+  width: 500px;
+  height: 420px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 5px 5px #A8A5A4;
+  box-shadow: 0 0 20px rgb(136, 138, 136);
+}
+.cardinfo{
+  background-color: rgb(7, 73, 160);
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  box-shadow: 0px 15px 40px #b3b3b3;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  left: 1%;
+}
+
+.contenedor {
+  height: 70%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  /* margin-top: 17px; */
+}
+.no-padding {
+  padding: 0;
+}
+
+::ng-deep.mat-tab-link,  ::ng-deep.mat-tab-label, ::ng-deep.mat-tab-label-active{
+  min-width: 97px!important;
+}
+
+
+.item-content {
+  text-align: center;
+  color: #fff;
+}
+
+.item-content h3 {
+  font-size: 19px;
+  font-weight: bold;
+  text-shadow: 0 0 1px #000;
+  margin: 10px 0;
+}
+
+.item-content p {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  text-shadow: 0 0 1px #000;
+}
+
+.item {
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.item>img {
+  margin-top: 30px;
+  margin-bottom: 1px;
+  width: 95%;
+}
+
+.color-ico{
+  color: rgb(255 255 255 / 100%) !important;
+}
+.color-ico-login{
+  color: rgb(7, 73, 160) !important;
+}
+/* quita lo opaco en el tab actual  */
+::ng-deep.mat-tab-label-active{
+  opacity: 1.0!important;
+}
+
+/*formulario login*/
+.cardformulariologin{
+ padding: 5%;
+ margin-left: 17px;
+}
+/*boton formulario */
+.lt-register-btn {
+  background: #2196f3;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 12px 50px 12px 50px;
+  line-height: normal;
+  font-size: 16px;
+  position: relative;
+  margin-top: 35px;
+}
+
+.lt-register-btn:hover,
+.lt-register-btn:focus {
+  color: #fff;
+  background: #11cc4a;
+}
+
+.lt-register-btn i {
+  position: absolute;
+  right: 15px;
+}
+
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: rgb(162 199 229)!important;
+}
+::ng-deep .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: #2196f3!important;
+}
+
+::ng-deep .mat-snack-bar-container {
+  color: rgba(255, 255, 255, 0.7);
+  background: rgb(7, 73, 160) !important;
+}
+
+::ng-deep .mat-simple-snackbar-action {
+  color: #ebebeb;
+}

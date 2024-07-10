@@ -1,0 +1,21 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-sidenav {
+    width: 250px;
+    background-color:#0f0;
+  }
+  
+  .sidenav-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color-ico{
+    color: #0749a0 !important;
+  }
+
+  .mat-toolbar.mat-primary {
+    background-color:  #0749a0;
+  }

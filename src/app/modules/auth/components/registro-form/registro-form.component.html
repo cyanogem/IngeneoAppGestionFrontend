@@ -1,0 +1,40 @@
+
+
+
+  <div class="cardformularioregistro">
+    <form [formGroup]="form" (ngSubmit)="register()">
+
+       <mat-form-field appearance="outline" class="full-width">
+        <input matInput placeholder="Nombre Completo" formControlName="name" name="name" required>
+        <mat-icon matPrefix>sentiment_very_satisfied</mat-icon>
+        <mat-error>
+          Por favor Ingrese Nombre Completo
+        </mat-error>
+      </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput placeholder="Correo Electronico" formControlName="email" name="email" required>
+          <mat-icon matPrefix>mail_outline</mat-icon>
+          <mat-error>
+            Por favor Ingrese un Correo valido
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput type="password" formControlName="password" placeholder="Contraseña" name="password" required>
+          <mat-icon matPrefix>lock_outline</mat-icon>
+          <mat-error>
+            por favor ingresa la contraseña
+          </mat-error>
+        </mat-form-field>
+        <!-- <mat-form-field appearance="outline" class="full-width">
+          <input matInput type="password" formControlName="confirmarpassword" placeholder="Confirmar Contraseña" required>
+          <mat-icon matPrefix>lock_outline</mat-icon>
+          <mat-error>
+            por favor ingresa la contraseña
+          </mat-error>
+        </mat-form-field> -->
+        <button mat-raised-button class="lt-register-btn">Registrarse</button>
+      </form>
+    </div>
+

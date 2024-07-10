@@ -1,0 +1,76 @@
+<div class="contenedor">
+  <mat-card class="cardinfo no-padding" style="z-index:1">
+    <mat-card-content>
+      <mat-tab-group headerPosition="below" animationDuration="500ms">
+        <mat-tab>
+          <div class="item">
+            <img class="img-responsive center-block" src="/assets/img/operarios-transportes.png" alt="Img1">
+            <div class="item-content">
+                <h2>Gestion Logistica</h2>
+            </div>
+        </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="cardlogin no-padding">
+    <mat-card-content>
+      <mat-tab-group mat-align-tabs="center" animationDuration="500ms" [selectedIndex]="1">
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="color-ico-login" fontIcon="home"></mat-icon>&nbsp;&nbsp;<div style="color: rgb(0, 0, 0);">REGISTRO</div>
+          </ng-template>
+          <app-registro-form></app-registro-form>
+        </mat-tab>
+        <mat-tab>
+          <ng-template  mat-tab-label>
+            <mat-icon class="color-ico-login">account_circle</mat-icon>&nbsp;&nbsp;<div style="color: rgb(2, 42, 75);" >LOGIN</div>
+          </ng-template>
+          <div class="cardformulariologin">
+            <form [formGroup]="form" (ngSubmit)="doLogin()">
+              <mat-form-field appearance="outline" class="full-width">
+                <input matInput placeholder="Usuario" formControlName="usuario" name="usuario" required>
+                <mat-icon matPrefix>face</mat-icon>
+                <mat-error>
+                  Por favor Ingrese un Usuario
+                </mat-error>
+              </mat-form-field>
+              <mat-form-field appearance="outline" class="full-width">
+                <input matInput type="password" formControlName="password" placeholder="Contraseña" name="password" required>
+                <mat-icon matPrefix>lock_outline</mat-icon>
+                <mat-error>
+                  por favor ingresa la contraseña
+                </mat-error>
+              </mat-form-field>
+              <button mat-raised-button class="lt-register-btn">Inicial Sesión</button>
+            </form>
+            <br>
+            <div class="container"
+                        fxLayout
+                        fxLayoutAlign="center"
+                        fxLayoutGap="10px"
+                        fxLayoutGap.xs="0"
+                    >
+                      <div class="itemm item-1" fxFlex="30%">
+                        <mat-slide-toggle>Recuerdame!</mat-slide-toggle>
+                      </div>
+                      <div class="itemm item-1" fxFlex="40%">
+                      </div>
+                      <div class="itemm item-2" fxFlex="30%">
+                        <a href="#">Recuperar contraseña</a>
+                      </div>
+              </div>
+        </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+
+
+
+
+

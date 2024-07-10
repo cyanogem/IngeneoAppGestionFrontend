@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <button mat-button [matMenuTriggerFor]="animals"><mat-icon class="color-ico">apps</mat-icon></button>
+<mat-menu #animals="matMenu">
+  <button (click)="maritima()" mat-menu-item><mat-icon class="color-ico">directions_boat</mat-icon>Gestion Maritima</button>
+  <button (click)="terrestre()" mat-menu-item><mat-icon class="color-ico">precision_manufacturing</mat-icon>Gestion Terrestre</button>
+  <button (click)="listadogestion()" mat-menu-item><mat-icon class="color-ico">list_alt</mat-icon>Reporte</button>
+</mat-menu>
+
+<!-- <mat-menu #rickymorty="matMenu">
+  <button (click)="personajes()" mat-menu-item><mat-icon class="color-ico">person_add</mat-icon>Personajes</button>
+  <button (click)="episodio()" mat-menu-item><mat-icon class="color-ico">person_add</mat-icon>Episodios</button>
+
+</mat-menu> -->
+      <!-- menu -->
+    <span>&nbsp; Gestion Logistica</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon class="color-ico">person_pin</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button (click)="logout()" mat-menu-item>
+        <mat-icon class="color-ico">exit_to_app</mat-icon>
+        <span>Cerrar sesión</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+
+
+  <!-- person_pin -->

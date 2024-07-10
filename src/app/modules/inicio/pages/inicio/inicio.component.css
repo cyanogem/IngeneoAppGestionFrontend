@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-table {
+  background: #f1ebeb;
+}
+.mat-form-field-appearance-standard .mat-form-field-flex {
+  padding-top: .0em;
+}
+
+.unir {
+  margin: 0 0 0px;
+}
